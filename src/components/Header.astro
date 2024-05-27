@@ -1,0 +1,61 @@
+<div class="sticky top-0 pt-1 h-[80px]" id="navbar">
+    <ul
+        class="flex items-center gap-[36px] text-[20px] justify-center mt-5"
+    >
+        <li class="absolute left-[30px] hidden" id="image-li">
+            <img
+                id="image"
+                src="images/profile.webp"
+                class="w-16 h-16 rounded-full border-2 border-white"
+                alt="Hola"
+            />
+        </li>
+        <li>
+            <a
+                class="text-white hover:opacity-70 transition-opacity"
+                href="#home">Home</a
+            >
+        </li>
+        <li>
+            <a
+                class="text-white hover:opacity-70 transition-opacity"
+                href="#about">About Me</a
+            >
+        </li>
+        <li>
+            <a
+                class="text-white hover:opacity-70 transition-opacity"
+                href="#proyects">Proyects</a
+            >
+        </li>
+        <li>
+            <a
+                class="text-white hover:opacity-70 transition-opacity"
+                href="#contact">Contact</a
+            >
+        </li>
+    </ul>
+</div>
+
+<script>
+    window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        const image = document.getElementById("image");
+        const imageLi = document.getElementById("image-li");
+        if (window.scrollY > 200) {
+            image.classList.remove("hidden");
+            image.classList.add("block");
+            navbar.classList.add("scrolled");
+            navbar.classList.add("bg-white/20");
+            imageLi.classList.remove("hidden");
+            imageLi.classList.add("block");
+        } else {
+            image.classList.remove("block");
+            image.classList.add("hidden");
+            navbar.classList.remove("scrolled");
+            navbar.classList.remove("bg-white/20");
+            imageLi.classList.remove("block");
+            imageLi.classList.add("hidden");
+        }
+    });
+</script>
