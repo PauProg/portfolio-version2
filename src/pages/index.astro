@@ -9,6 +9,7 @@ import Proyect from "../components/Proyect.astro";
 //Images
 import InstagramLogo from "../images/instagram.svg";
 import GitHubLogo from "../images/github.svg";
+import LinkedInLogo from "../images/linkedin.svg";
 import YouTubeLogo from "../images/youtube.svg";
 import Html from "../images/brand-html5.svg";
 import Css from "../images/brand-css3.svg";
@@ -24,18 +25,18 @@ import Batman from "../images/batman-mockup.webp";
 		<Header />
 		<div
 			id="home"
-			class="flex items-center lg:justify-between sm:justify-evenly lg:mt-36 sm:mt-32"
+			class="pt-12 pb-12 flex items-center lg:justify-between sm:justify-evenly lg:mt-36 sm:mt-32"
 		>
 			<img
 				src="images/profile.webp"
 				alt="PauProg profile picture"
-				class="w-60 h-60 rounded-full border-2 border-white"
+				class="hidden lg:flex sm:flex lg:w-60 lg:h-60 sm:w-44 sm:h-44 rounded-full border-2 border-white"
 			/>
 			<div>
-				<h class="font-bold lg:text-6xl w-full mb-7 sm:text-5xl"
+				<h class="text-4xl font-bold lg:text-6xl w-full mb-7 sm:text-5xl"
 					>Hi, I'm PauProg 👋</h
 				>
-				<p class="text-3xl mb-7">16 years old</p>
+				<p class="text-2xl sm:text-3xl mb-7">17 years old</p>
 				<WorkButton />
 			</div>
 		</div>
@@ -58,8 +59,7 @@ import Batman from "../images/batman-mockup.webp";
 			<p class="text-white/70 lg:text-xl sm:text-lg">
 				My professional goal is to work as a remote web developer. I
 				love learning new things and I follow industry experts like
-				MiduDev. I am a native Spanish and Catalan speaker and I am
-				about to obtain a B2 certificate in English.
+				MiduDev. I am a native Spanish and Catalan speaker and I've recently archieved the B2 level in Cambridge English.'
 			</p>
 		</div>
 		<Separator />
@@ -76,7 +76,7 @@ import Batman from "../images/batman-mockup.webp";
 				</div>
 				<time
 					class="mb-1 lg:text-[20px] sm:text-[15px] font-normal leading-none text-white/30"
-					>Present</time
+					>July 2024</time
 				>
 				<h3
 					class="lg:text-[32px] sm:text-[27px] font-bold text-white"
@@ -86,11 +86,18 @@ import Batman from "../images/batman-mockup.webp";
 				<p
 					class="mb-4 lg:text-[20px] sm:text-[15px] font-normal text-white/70"
 				>
-					I'm working on a website for the ACFPi association, linked
-					to my highschool Jaume Viladoms. This project allows me to
+					I've done a website for the ACFPi association, linked
+					to my highschool Jaume Viladoms. This project allowed me to
 					apply my knowledge in a real project which is very important
 					for the future.
 				</p>
+				<a
+					href="https://acfpi.cat"
+					class="transition-all duration-300 inline-flex items-center px-4 py-2 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none focus:text-blue-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
+					target="_blank"
+				>
+					Live
+				</a>
 			</li>
 			<li class="mb-10 ms-4">
 				<div
@@ -234,6 +241,13 @@ import Batman from "../images/batman-mockup.webp";
 					alt="GitHub logo"
 					anchor="https://github.com/PauProg"
 					color="white"
+				/>
+				<Social
+					title="LinkedIn"
+					src={LinkedInLogo}
+					alt="LinkedIn logo"
+					anchor="https://www.linkedin.com/in/pau-medina-vázquez-259677332/"
+					color="lightblue"
 				/>
 				<Social
 					title="YouTube"
