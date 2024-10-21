@@ -6,31 +6,31 @@
             <img
                 id="image"
                 src="images/profile.webp"
-                class="w-16 h-16 rounded-full border-2 border-white"
-                alt="Hola"
+                class="w-16 h-16 hidden rounded-full border-2 border-white"
+                alt="Profile picture"
             />
         </li>
         <li>
             <a
-                class="text-white hover:opacity-70 transition-all"
+                class="text-white sm:text-xl text-sm hover:opacity-70 transition-all"
                 href="#home">Home</a
             >
         </li>
         <li>
             <a
-                class="text-white hover:opacity-70 transition-all"
+                class="text-white sm:text-xl text-sm hover:opacity-70 transition-all"
                 href="#about">About Me</a
             >
         </li>
         <li>
             <a
-                class="text-white hover:opacity-70 transition-all"
+                class="text-white sm:text-xl text-sm hover:opacity-70 transition-all"
                 href="#proyects">Proyects</a
             >
         </li>
         <li>
             <a
-                class="text-white hover:opacity-70 transition-all"
+                class="text-white sm:text-xl text-sm hover:opacity-70 transition-all"
                 href="#contact">Contact</a
             >
         </li>
@@ -42,18 +42,28 @@
         const navbar = document.getElementById("navbar");
         const image = document.getElementById("image");
         const imageLi = document.getElementById("image-li");
+
         if (window.scrollY > 425) {
-            image.classList.remove("hidden");
-            image.classList.add("block");
             navbar.classList.add("scrolled");
             navbar.classList.add("bg-white/20");
-            imageLi.classList.remove("hidden");
-            imageLi.classList.add("block");
+
+            if (window.innerWidth > 640) {
+                image.classList.remove("hidden");
+                image.classList.add("block");
+                imageLi.classList.remove("hidden");
+                imageLi.classList.add("block");
+            } else {
+                image.classList.remove("block");
+                image.classList.add("hidden");
+                imageLi.classList.remove("block");
+                imageLi.classList.add("hidden");
+            }
         } else {
+            navbar.classList.remove("scrolled");
+            navbar.classList.add("bg-white/20");
+
             image.classList.remove("block");
             image.classList.add("hidden");
-            navbar.classList.remove("scrolled");
-            navbar.classList.remove("bg-white/20");
             imageLi.classList.remove("block");
             imageLi.classList.add("hidden");
         }

@@ -11,10 +11,10 @@ const { src, title, alt, anchor, description, iconOne, iconTwo, iconThree } = As
 
 <a
     href={anchor}
-    class="relative w-[95%] flex justify-left gap-7 items-center px-5 py-3 border-2 rounded-xl border-gray-600 hover:border-gray-400 transition-all duration-500"
+    class="relative w-[95%] flex flex-col sm:flex-row justify-left gap-7 items-center px-5 py-3 border-2 rounded-xl border-gray-600 hover:border-gray-400 transition-all duration-500"
     target="_blank"
 >
-    <img src={src.src} alt={alt} class="w-2/5 rounded-lg" />
+    <img src={src.src} alt={alt} class="w-full sm:w-2/5 rounded-lg" />
     <div class="mr-4">
         <h3 class="font-bold text-3xl mb-4">{title}</h3>
         <p class="text-lg text-pretty">{description}</p>

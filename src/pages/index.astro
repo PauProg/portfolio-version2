@@ -42,7 +42,7 @@ import Batman from "../images/batman-mockup.webp";
 		</div>
 		<Separator />
 		<div id="about">
-			<h2 class="font-bold lg:text-5xl sm:text-4xl">About Me</h2>
+			<h2 class="font-bold mt-5 sm:mt-0 lg:text-5xl sm:text-4xl">About Me</h2>
 			<p class="text-white/70 lg:text-xl sm:text-lg mt-5 mb-9">
 				I'm Pau Medina Vázquez, a frontend development enthusiast. I'm
 				currently studying a computer science degree at Jaume Viladoms
@@ -56,7 +56,7 @@ import Batman from "../images/batman-mockup.webp";
 				association linked to my school, which has allowed me to apply
 				my knowledge in a real project.
 			</p>
-			<p class="text-white/70 lg:text-xl sm:text-lg">
+			<p class="text-white/70 mb-6 lg:text-xl sm:text-lg">
 				My professional goal is to work as a remote web developer. I
 				love learning new things and I follow industry experts like
 				MiduDev. I am a native Spanish and Catalan speaker and I've recently archieved the B2 level in Cambridge English.'
@@ -64,7 +64,7 @@ import Batman from "../images/batman-mockup.webp";
 		</div>
 		<Separator />
 
-		<h2 class="font-bold mb-6 lg:text-5xl sm:text-4xl">Projects</h2>
+		<h2 class="font-bold mb-6 mt-5 lg:text-5xl sm:text-4xl">Projects</h2>
 		<ol
 			class="relative border-s border-gray-700"
 			id="proyects"
@@ -225,9 +225,9 @@ import Batman from "../images/batman-mockup.webp";
 			/>
 		</div>
 		<Separator />
-		<div id="contact">
-			<h2 class="lg:text-5xl sm:text-4xl font-bold mb-3">Socials</h2>
-			<div class="flex gap-5">
+		<div id="contact" class="sm:mb-0 mb-10">
+			<h2 class="lg:text-5xl sm:text-4xl font-bold mt-5 mb-3">Socials</h2>
+			<div class="flex flex-wrap sm:gap-5 gap-2">
 				<Social
 					title="Instagram"
 					src={InstagramLogo}
@@ -259,17 +259,17 @@ import Batman from "../images/batman-mockup.webp";
 			</div>
 		</div>
 		<div
-			class="flex bg-white/15 border-2 border-white/20 rounded-lg justify-between items-center mb-[400px] mt-10 px-2 py-2"
+			class="sm:flex hidden bg-white/15 border-2 border-white/20 rounded-lg justify-between items-center mb-[100px] mt-10 px-2 py-2"
 		>
 			<div
-				class="bg-white/15 border-2 border-white/20 px-4 py-2 font-semibold lg:text-2xl sm:text-s rounded-lg cursor-pointer"
+				class="bg-white/15 border-2 border-white/20 px-4 py-2 font-semibold lg:text-2xl sm:text-sm rounded-lg cursor-pointer"
 			>
-				✉️ contact@pauprog.tech
+				✉️ paumedvazquez@gmail.com
 			</div>
 			<div class="flex gap-2 lg:flex-row sm:flex-col">
 				<div
-					class="flex justify-center items-center gap-2 bg-blue-600/40 px-5 py-2 rounded-lg font-semibold lg:text-xl sm:text-s border-blue-500/50 border-2 transition-all hover:bg-blue-600/60 cursor-pointer"
-					onclick="navigator.clipboard.writeText('contact@pauprog.tech')"
+					class="hidden sm:flex justify-center items-center gap-2 bg-blue-600/40 px-5 py-2 rounded-lg font-semibold lg:text-xl sm:text-s border-blue-500/50 border-2 transition-all hover:bg-blue-600/60 cursor-pointer"
+					onclick="navigator.clipboard.writeText('paumedvazquez@gmail.com')"
 				>
 					<p>Copy</p>
 					<svg
@@ -297,7 +297,7 @@ import Batman from "../images/batman-mockup.webp";
 					class="flex justify-center items-center gap-2 bg-blue-600/40 px-5 py-2 rounded-lg font-semibold lg:text-xl sm:text-s border-blue-500/50 border-2 transition-all hover:bg-blue-600/60 cursor-pointer"
 				>
 					<a
-						href="mailto:contact@pauprog.tech"
+						href="mailto:paumedvazquez@gmail.com"
 						target="_blank"
 						class="flex gap-2 align-center justify-center"
 					>
@@ -323,7 +323,7 @@ import Batman from "../images/batman-mockup.webp";
 		</div>
 		<footer>
 			<p
-				class="text-white/50 font-semibold text-xl justify-center align-center flex mb-7"
+				class="text-white/50 font-semibold text-sm sm:text-xl justify-center align-center flex mb-7"
 			>
 				Made by PauProg
 			</p>
